@@ -1,0 +1,49 @@
+* {
+
+    margin : 10;
+    padding: 5;
+
+}
+
+body {
+
+    background:rgba(0, 73, 102, 0.788);
+
+}
+
+.menu {
+
+    list-style: none; /*quita los puntos de lista */
+    background: rgb(205, 43, 226);
+    /* padding: 5px 5px;*/
+    max-width:  600px;
+    margin: auto;
+}
+
+.menu li{
+
+    display: inline-block;
+    padding: 10px;
+    /* border: 1px solid black; */
+
+}
+
+.menu li a {
+
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    
+}
+
+.menu li :hover { /* Puntero de mose cambie de color */
+
+
+    text-decoration: none;
+    color: black;
+    background: chartreuse;
+    /*border-bottom: blue;*/
+}
+
+
