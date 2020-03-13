@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="nombre"></h2>
+    
+    <button id="boton1">Nombre1</button>
+    <button id="boton1">Nombre2</button>
+    <button id="boton1">Nombre3</button>
+
+<script>
+
+jQuery(document).ready(function(){
+
+var text = '{ "empleados" : [' +
+'{ "Nombre":"John" , "apellido":"Doe" },' +
+'{ "Nombre":"Anna" , "apellido":"Smith" },' +
+'{ "Nombre":"Peter" , "apellido":"Jones" } ]}';
+
+var ibj = JSON.parse(text);
+
+$("#boton1").click(function() {
+    $("#Nombre").html(
+        obj.empleados[0].nombre + " " + obj.empleados[0].apellido 
+    ); 
+    });
+
+    $("#boton2").click(function() {
+    $("#Nombre").html(
+        obj.empleados[1].nombre + " " + obj.empleados[1].apellido 
+    ); 
+    });
+
+    $("#boton3").click(function() {
+    $("#Nombre").html(
+        obj.empleados[2].nombre + " " + obj.empleados[2].apellido 
+    ); 
+    });
+
+});
+
+
+
+
+</script>
+
+
+
+<!--              CODIGO PARA JAVA SCRIP            --> 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+    ></script>
+</body>
+</html>
