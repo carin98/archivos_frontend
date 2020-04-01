@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api de Fotografias</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../Bootstrap/css/all.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+         <div class="col-md-12">
+            <button id="buscar" class="btn btn-danger"></i>Buscar Fotografias de perros</button>
+         </div>
+        </div>
+        <div class="row">
+            <div id="resultado" class="col-md-12"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+    ></script>
+    
+    <script>
+        jQuery(document).ready(function(){  
+
+            $("#buscar").click(function(){
+                $.getJSON("https://dog.ceo/api/breeds/image/random", function( data ) {
+                $(".json pre").html(JSON.stringify(data, null, 4));
+                $(".image-content").html("<img src='" + data.message + "'>");
+              resultado='<div class="card" style="width: 18rem;"> <img src="'+
+               data.message + '">  </div">'
+
+
+                $("#resultado").append(resultado);
+            });
+            });
+        });
+    </script>
+
+
+</body>
+</html>
