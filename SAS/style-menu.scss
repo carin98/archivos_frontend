@@ -1,0 +1,73 @@
+
+$color1: black;
+$color2: chartreuse;
+$fuente1: 'dancing script',cursive;
+$fuente2: 'pacifico';
+
+
+*{
+
+    margin : 10;
+    padding: 5;
+
+}
+
+body {
+
+    background:rgba(0, 73, 102, 0.788);
+
+}
+
+.menu {
+
+    list-style: none; /*quita los puntos de lista */
+    background: rgb(205, 43, 226);
+    /* padding: 5px 5px;*/
+    max-width:  600px;
+    margin: auto;
+    font-family: cursive;
+}
+
+.menu li{
+
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    /* border: 1px solid black; */
+
+}
+
+.menu li a {
+
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    
+}
+
+.menu li :hover { /* Puntero de mouse cambie de color */
+
+
+    text-decoration: none;
+    color:$color1;
+    background: $color2;
+    /*border-bottom: blue;*/
+    text-decoration: uppercase;
+    border-bottom: 2px solid white;
+    font-family: 'pacifico', cursive;
+    
+}
+
+h1{
+
+   font-family: $fuente1;
+    
+}
+
+h2, p{
+    font-family: $fuente2;
+
+}
+
+

@@ -1,0 +1,53 @@
+* {
+  margin: 10;
+  padding: 5;
+}
+
+body {
+  background: rgba(0, 73, 102, 0.788);
+}
+
+.menu {
+  list-style: none;
+  /*quita los puntos de lista */
+  background: #cd2be2;
+  /* padding: 5px 5px;*/
+  max-width: 600px;
+  margin: auto;
+  font-family: cursive;
+}
+
+.menu li {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.menu li :hover {
+  /* Puntero de mouse cambie de color */
+  text-decoration: none;
+  color: black;
+  background: chartreuse;
+  /*border-bottom: blue;*/
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+  border-bottom: 2px solid white;
+  font-family: 'pacifico', cursive;
+}
+
+h1 {
+  font-family: "dancing script", cursive;
+}
+
+h2, p {
+  font-family: "pacifico";
+}
+/*# sourceMappingURL=style-menu.css.map */
